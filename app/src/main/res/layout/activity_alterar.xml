@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kletian.appbanco.Alterar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descricao"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvDescricao_altera"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereco"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/txvDescricao_altera"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvEndereco_altera"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bairro"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/txvEndereco_altera"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvBairro_altera"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Impacto"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/txvBairro_altera"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvimpacto_altera"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alterar"
+        android:id="@+id/btnAltera"
+        android:layout_below="@+id/txvimpacto_altera"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txvId_alterar"
+        android:layout_above="@+id/txvDescricao_altera"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:id="@+id/btnExcluir"
+        android:layout_below="@+id/btnAltera"
+        android:onClick="excluir"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TELA INICIAL"
+        android:id="@+id/btnTelaInicial"
+        android:layout_below="@+id/btnExcluir"
+        android:onClick="voltarTelaInicial"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

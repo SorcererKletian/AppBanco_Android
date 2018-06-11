@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppBanco</string>
+    <string name="req_send">Enviando Requisição</string>
+    <string name="req_sent">Requisição Enviada!</string>
+</resources>
